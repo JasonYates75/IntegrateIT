@@ -1,128 +1,183 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IntegrateIT Australia</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    
     <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+    
+</head> 
+<body>
   
-  <!--Header-->
-  <div class="row">
+<!--Header-->
+<header id="header">
+<div class="row">
   <!--Logo Image and text-->
-    <div class="large-3 columns">
-      <img src="img/logo.png" alt=""/>
+    <div class="small-10 small-centered large-3 large-uncentered columns" id="logo-image">
+      <img src="img/logo.png" alt="" id="logo"/>
     </div>
-    <div class="large-6 columns">
-		<h2>Integrate<span id="logo_it" style="color:blue">IT</span> Australia</h2>
+    <div class="small-10 small-centered large-6-uncentered columns">
+		<h2 id="logo_text">Integrate<span id="logo_it">IT</span> Australia</h2>
+        <p id="tagline">“integrating technology for your business needs”</p>
     </div> 
     <!--End Logo Image and Text-->
     
     <!--Social links and Phone-->
-    <div class="large-3 columns">
-    	Social
-    </div>
-    <!--Social links and phone-->
+  <div class="large-3 columns connections">
+      <ul class="small-block-grid-12 large-block-grid-3 social-icons">
+          <a href="tel:1300766933"><i class="fi-mobile size-48" ></i></a>
+          <a href"#"><i class="fi-social-twitter size-48" ></i></a>
+          <a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48" ></i></a>
+          
+          
+      </ul>
+     <a href="tel:1300766933"><p id="mobile"> Phone 1300 76 69 33</p></a>
+     
   </div>
-    <!--End Header-->
+    <!--End Social links and phone-->
+ 
+  </div>
     
-    <!--Nav-->
-<div class="row">
-<nav class="top-bar" data-topbar>
-
-<ul class="title-area">
-<li class="name">
-<h1><a href="#">IntegrateIT</a></h1>
-</li>
-<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-</ul>
-
-<section class="top-bar-section">
-<!-- Left Nav Section -->
-<ul class="left">
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-      <!--	<ul>
-        	<li><a href="#">Business Support and Maintenance Services</a></li>
-            <li><a href="#">IT Consulting</a></li>
-            <li><a href="#">IT System Audits, Assessments and Consultancy Services:
-</a></li>
-            <li><a href="#">On Demand Remote Support Services:
-</a></li>
-            
-        </ul>-->
-<li><a href="#">Contact Us</a></li>
-<li><a href="#">Vendors</a></li>
-</ul>
-</section>
-</nav>
+    
+<!--Nav-->
+<div id="nav">
+    <div class="row">
+    <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name" style="background-color:#5C5C5C">
+        	<h1><a href="#">IntegrateIT</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    
+    <!--<div class="large-12 columns">-->
+    <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#" data-dropdown="drop1">Services</a></li>
+    <ul id="drop1" class="f-dropdown" data-dropdown-content>
+    <li><a href="#">Business Support</a></li>
+    <li><a href="#">Maintenance</a></li>
+    <li><a href="#">IT Consulting</a></li>
+    <li><a href="#">IT System Audits</a></li>
+    <li><a href="#">Assessments</a></li>
+    <li><a href="#">Remote Support</a></li>
+    </ul>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Vendors</a></li>
+    </ul>
+    </section>
+    </nav>
+    <!--</div>-->
+    </div>
 </div>
 <!-- End Nav -->
- 
+
+</header>
+<!--End Header-->
+
+
 <!-- First Band (Slider) -->
+
+<div id="main-content"> 
+
+      <div id="gallery">
+      
+      <div class="row">
+      
+      
+      <ul id="slider" data-orbit>
+      <li>
+        <img src="img/moonshine-server.jpg" alt="slide 1" />
+        <div class="orbit-caption">
+          HP Proliant Moonshine Servers
+        </div>
+      </li>
+      <li>
+        <img src="img/customer-support.jpg" alt="slide 2" />
+        <div class="orbit-caption">
+          Customer Support
+        </div>
+      </li>
+      <li>
+        <img src="img/data-centres.jpg" alt="slide 3" />
+        <div class="orbit-caption">
+          Data Center Hardware    
+         </div>
+      </li>
+      <li>
+        <img src="img/hp-proliant-gen8.jpg" alt="slide 4" />
+        <div class="orbit-caption">
+          HP Proliant Gen8 Servers
+        </div>
+      </li>
+      <li>
+        <img src="img/office-365.jpg" alt="slide 5" />
+        <div class="orbit-caption">
+          Office 365
+        </div>
+      </li>
+      <li>
+        <img src="img/intel-workstations.jpg" alt="slide 6" />
+        <div class="orbit-caption">
+          Intel workstation
+        </div>
+      </li>
+    </ul>
+    </div>
+    </div>
+<!--End Orbit Gallery-->
+
+
+
+
+<!--Blurb-->
+<div class="row">
+<div id="blurb">
+<div class="small-10 small-centered large-12 large-uncentered">
+<h2>About <span class="integrate-blue">Integrate</span>IT <span class="integrate-blue">Australia</span></h2>
+</div>
+<p>
+IntegrateIT Australia is a leading provider of IT solutions and support to business’ within Australia. We look at increasing efficiency, productivity and profitability for all of our clients through increased uptime and hardware/software quality. We work with you to get the most out of your IT infrastructure. Our proactive approach allows us to eliminate most technical issues within your network before they occur.
+</p>
+</div>
+</div>
+<!--End Blurb-->
+
+<div class="row">
+<hr/>
+</div>
+<!--Four Content Blocks -->
  
   <div class="row">
-  <ul id="slider" data-orbit>
-  <li>
-    <img src="img/moonshine-server.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      HP Proliant Moonshine Servers
-    </div>
-  </li>
-  <li>
-    <img src="img/customer-support.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Customer Support
-    </div>
-  </li>
-  <li>
-    <img src="img/data-centres.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-	  Data Center Hardware    
-     </div>
-  </li>
-  <li>
-    <img src="img/hp-proliant-gen8.jpg" alt="slide 4" />
-    <div class="orbit-caption">
-      HP Proliant Gen8 Servers
-    </div>
-  </li>
-  <li>
-    <img src="img/office-365.jpg" alt="slide 5" />
-    <div class="orbit-caption">
-      Office 365
-    </div>
-  </li>
-  <li>
-    <img src="img/intel-workstations.jpg" alt="slide 6" />
-    <div class="orbit-caption">
-      Intel workstation
-    </div>
-  </li>
-</ul>
-</div>  
-<!-- Three-up Content Blocks -->
- 
-  <div class="row">
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+   <div class="large-3 columns four-blocks">
+    <img src="img/ring.jpg" />
+      <h4 class="four-block-heading">Support</h4>
+      <p>When you are on a support plan with IntegrateIT, you are assigned an engineer as your primary contact. We come out on a scheduled monthly visit and check your network and infrastructure for any issues. </p>
     </div>
     
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    <div class="large-3 columns four-blocks">
+      <img src="img/backup.jpg" />
+      <h4 class="four-block-heading" >Disaster Recovery</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
     </div>
     
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    <div class="large-3 columns four-blocks">
+      <img src="img/solutions2.jpg" />
+      <h4 class="four-block-heading">Software Sales</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+    </div>
+    
+    <div class="large-3 columns four-blocks">
+      <img src="img/solutions.jpg" />
+      <h4 class="four-block-heading" >Auditing/Consulting</h4>
+      <p>We provide audits of your infrastructure to detect issues and possible future issues. We will provide a full written report of the audit for you to keep.</p>
     </div>
   
     </div>
@@ -136,7 +191,7 @@
             
         <div class="row">
           <div class="large-9 columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
+            <p>Our team of professionals are ready to take your call. Our commitment to you is to keep improving your business and taking your business to the next level.</p>
           </div>
           <div class="large-3 columns">
             <a href="#" class="radius button right">Contact Us</a>
@@ -146,28 +201,33 @@
       
     </div>
   </div>
+</div> 
+<!--End Main Content-->
+<!-- Footer -->
+<footer id="footer">  
+	<div id="footer-insert">
+        <div class="row">
+                <div class="large-12 columns">
+                
+                    <div class="row">
+                        <div class="large-6 columns">
+                        <p>© IntegrateIT Australia</p>
+                        </div>
+                        <div class="large-6 columns">
+                            <ul class="inline-list right">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div> 
+        </div>
+    </div>
+</footer>
+ <!-- End Footer -->
  
-  <!-- Footer -->
-  
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© IntegrateIT Australia</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </footer>
-    
    
     
     <script src="js/vendor/jquery.js"></script>
