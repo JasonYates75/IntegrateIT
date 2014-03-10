@@ -4,12 +4,53 @@
 
  
 @media only screen and (min-width: 40.063em) {
+	
+.size-12 { 
+	font-size: 12px; 
+	}
+      
+.size-14 {
+	 font-size: 14px;
+	  }
+
+.size-16 { 
+	font-size: 16px; 
+	}
+
+.size-18 {
+	 font-size: 18px;
+	  }
+
+.size-21 {
+	 font-size: 21px;
+	  }
+
+.size-24 {
+	 font-size: 24px;
+	  }
+
+.size-36 {
+	 font-size: 36px;
+	  }
+
+.size-48 {
+	 font-size: 48px;
+	  }
+
+.size-60 {
+	 font-size: 60px;
+	  }
+
+.size-72 {
+	 font-size: 72px;
+	  }	
+	
 .column.large-uncentered, .columns.large-uncentered {
-margin-left: 0;
-margin-right: 0;
-float: left;
-margin-top: 3%;
-}
+	margin-left: 0;
+	margin-right: 0;
+	float: left;
+	margin-top: 3%;
+	}
 
 
 hr {
@@ -17,8 +58,13 @@ hr {
 	box-shadow: 0px 4px 2px #A29D9E;
 	border: solid 2px #049EE8;
 	}
-	
-	
+		
+/*==========================Header================================*/	
+#header{
+	width: 100%;
+	background: white;
+	}
+/*============================Logo================================*/	
 #logo {
 	width: 90%;
 	margin-bottom: 10%;
@@ -29,14 +75,14 @@ hr {
 	font-family: Trebuchet MS;
 	color: #049EE8;
 	font-style: italic;
-	/*text-shadow: 2px 2px 4px #aaa;*/
+	text-shadow: 2px 2px 4px #aaa;
 	margin-top: 10%;
 	margin-left: -18px;
 	}
 
 #logo_it{
 	color: black;
-	/*text-shadow: 2px 2px 4px #aaa;*/
+	text-shadow: 2px 2px 4px #aaa;
 	}
 	
 #tagline{
@@ -45,78 +91,97 @@ hr {
 	font-size:21px!important;
 	font-style: italic;
 	margin-left: -27px;
-	/*text-shadow: 2px 2px 4px #aaa;*/
 	}
-	
+/*==========================Social Media and Mobile Phone=========*/
 
-	
-.connections {
+#social_large_columns {
 	margin-top: -21%;
 	}
-	
-.connections a {
-color: #008cba;
-text-decoration: none;
-line-height: inherit;
-/* text-align: center; */
-/* margin-left: auto; */
-/* margin-right: auto; */
-background: brown;
+#social_small_grid_3{margin-left: 17%; margin-bottom: 6%;}
+/*.small-block-grid-3 > li {
+	width: 33.33333%;
+	list-style: none;
+	margin-left: 20px;
+	}*/
+.fi-social-facebook{float: left; margin-left: 10%;}	
+#mobile {
+float: left;
+margin-top: -19%;
+margin-right: 5%;
 }
 	
+.fi-mobile{
+	display:none;
+	}
+/*=============================Navigation========================*/
+/*=====nav background=====*/	
 
-.fi-social-twitter{
-	color: #5DD7FC; 
-	float:right;  
-	margin-right: 25%;
-	}
-	
-.fi-social-facebook{
-	color: #45619D; 
-	float:right; 
-	margin-right: 5%
-	}	
-	
-.fi-mobile {display:none;}
-#mobile{float:right;}
-	
-#header{
-	width: 100%;
-	background: white;
-	}
-	
+/*trial round buttons*/
+
+/*.nav {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.nav a {
+  display: block;
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  color: #a7a7a7;
+  margin: 36px;
+  width: 144px;
+  height: 144px;
+  position: relative;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}*/
+/*=================original navigation==============================*/
+
 #nav{
 	width: 100%;
-	background-color:#5C5C5C;
+	/*background-color:#5C5C5C;*/
+	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+	background-image: linear-gradient(#fff, #ccc);
 	box-shadow: 8px 8px 2px #A29D9E;
+	
 }
 .top-bar-section ul li {
 	float: left;
-	border-top: 1px darkgray solid;
+	/*border-top: 1px darkgray solid;*/
 	}	
 	
 ul .left li  {
-	background-color:black;
+	/*background-color:black;*/
+		background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+		background-image: linear-gradient(#fff, #ccc);
 	}
 	
 .top-bar {
-	  /*background-image:url(../img/navbar2.png)!important;
-	  background-repeat:repeat-x!important;*/
-	  background-color: #5C5C5C;
+	  /*background-color: #5C5C5C;*/
+		background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+		background-image: linear-gradient(#fff, #ccc);
 	  }
 	  
 .top-bar-section li:not(.has-form) a:not(.button) {
     box-shadow: 0px 2px 2px #A29D9E!important;
-	/*background-image:url(../img/navbar2.png)!important;
-	background-repeat:repeat-x!important; */
-	background-color: white;
+	/*background-color: white;*/
+	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+	background-image: linear-gradient(#fff, #ccc);
 	width:100%!important;
 	}
-
 	
-	
-
-/*nav background*/	
 .top-bar-section ul li > a {
 	display: block;
 	width: 100%;
@@ -133,49 +198,42 @@ ul .left li  {
 	width: 100%;
 	color: #049EE8;
 	}
-	
 
 	
-/*all dropdown list elements*/
+/*======================all dropdown list elements====================*/
 .f-dropdown > * {
 width: 100%!important;
 }
 
+/*======================Main Content=================================*/
 #main-content{
 	width: 100%;
 	background-color: white;
-	/*background-color: #006794;*/	
-	/*background-color: #33cccc;*/
 	}
 
- .size-12 { font-size: 12px; }
-      
-.size-14 { font-size: 14px; }
 
-.size-16 { font-size: 16px; }
-
-.size-18 { font-size: 18px; }
-
-.size-21 { font-size: 21px; }
-
-.size-24 { font-size: 24px; }
-
-.size-36 { font-size: 36px; }
-
-.size-48 { font-size: 48px; }
-
-.size-60 { font-size: 60px; }
-
-.size-72 { font-size: 72px; }
-
+/*===========================Orbit Gallery==========================*/
 #gallery{
-	background-color:#33cccc;;
+	background-color:#91A5B2;
 	}	
 	
 .orbit-container {
-margin-top: 5%;
-}
+	margin-top: 5%;
+	}
 	
+/*==========================Blurb==================================*/	
+#blurb{
+	margin-top: 10%;
+	}
+	
+#blurb h2{
+	margin-top: 20px;
+	}
+#blurb p {
+	margin-bottom: 60px;
+	}
+
+/*=========================4 Content Blocks=======================*/
 #four-block-heading{
 	text-transform:uppercase;
 	font-family: Trebuchet MS;
@@ -204,12 +262,12 @@ margin-top: 5%;
 	font-size: 14px;
 	margin-bottom: 32%;
 	}
-	
+
+/*===============================Footer============================*/	
 #footer {
 	width: 100%;
 	padding: 20px 0;
-	/* background-color: #006794; */
-	background-color: #33cccc;
+	background-color:#91A5B2;
 	margin-top: 5%;
 	}
 #footer-insert {
@@ -219,16 +277,10 @@ margin-top: 5%;
 	padding: 2% 0;
 	}
 
-#blurb{margin-top: 10%;}
-#blurb h2{
-		margin-top: 20px;
-	}
-#blurb p {
-margin-bottom: 60px;
-}
+
 }
 @media only screen and (max-width: 40em) {
-	.size-12 { font-size: 12px; }
+.size-12 { font-size: 12px; }
       
 .size-14 { font-size: 14px; }
 
@@ -250,28 +302,44 @@ margin-bottom: 60px;
 
 
 #logo {
-margin-top: 10%;
-}
-
-#logo_text {
-	float: left;
-	text-align: center;
-	margin-top: 5%;
+	margin-top: 10%;
 	}
+
+#logo_text  {
+	text-align: center;
+	text-shadow: 2px 2px 4px #aaa;
+	margin-top: 5%;
+	font-size:36px;
+	color: #049EE8;
+	}
+	
+#logo_it{
+	color: black;
+	text-shadow: 2px 2px 4px #aaa;
+	}	
+	
+.integrate-blue {
+	color: #049EE8;
+	}
+		
 #tagline{
 	margin-top: 2%;
 	text-align: center;
 	}
+
+
+	
 .fi-mobile{
-	float:left;
+	display:none;
 	}
+	
 .fi-social-twitter{
-	float: left;
+	display:none;
 	}
 	
 .fi-social-facebook{
-	float: left;
-	}	
+	display:none;
+	}
 	
 #mobile{
 	display:none;
@@ -282,7 +350,4 @@ margin-top: 10%;
 
 
 
- href="tel:1300766933"><i class="fi-mobile size-48" ></i></a>
-          <a href"#"><i class="fi-social-twitter size-48" style="color: #5DD7FC; float:right;  margin-right: 25%" ></i></a>
-          <a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48" style="color: #45619D; float:right; margin-right: 5%"></i></a>
 
