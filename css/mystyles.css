@@ -66,8 +66,8 @@ hr {
 	}
 /*============================Logo================================*/	
 #logo {
-	width: 90%;
-	margin-bottom: 10%;
+	width: 50%;
+	margin-bottom: 14%;
 	}
 	
 #logo_text {
@@ -76,8 +76,8 @@ hr {
 	color: #049EE8;
 	font-style: italic;
 	text-shadow: 2px 2px 4px #aaa;
-	margin-top: 10%;
-	margin-left: -18px;
+	margin-top: 3%;
+	margin-left: -116px;
 	}
 
 #logo_it{
@@ -90,20 +90,28 @@ hr {
 	font-family: Trebuchet MS;
 	font-size:21px!important;
 	font-style: italic;
-	margin-left: -27px;
+	margin-left: -123px;
 	}
 /*==========================Social Media and Mobile Phone=========*/
 
 #social_large_columns {
-	margin-top: -21%;
+	margin-top: -1%;
 	}
-#social_small_grid_3{margin-left: 17%; margin-bottom: 6%;}
-/*.small-block-grid-3 > li {
-	width: 33.33333%;
-	list-style: none;
-	margin-left: 20px;
-	}*/
-.fi-social-facebook{float: left; margin-left: 10%;}	
+#social_small_grid_3{
+	margin-left: 31%;
+	 margin-bottom: 6%;
+	 }
+
+.fi-social-facebook{
+	float: left;
+	}	
+	
+.fi-social-twitter {
+	float: left;
+	margin-left: 59%;
+	margin-top: 44%;
+	}
+	
 #mobile {
 float: left;
 margin-top: -19%;
@@ -218,8 +226,9 @@ width: 100%!important;
 	}	
 	
 .orbit-container {
-	margin-top: 5%;
-	}
+margin-top: 1%;
+padding-bottom: 9px;
+}
 	
 /*==========================Blurb==================================*/	
 #blurb{
