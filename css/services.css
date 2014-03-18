@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href=
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+   
+  <title>IntegrateIT Australia</title>
+    <link rel="stylesheet" href=" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    
+    <script src="js/vendor/modernizr.js"></script>
+    
+</head> 
+<body>
+  
+<!--Header-->
+<header id="header">
+<div class="row">
+  <!--Logo Image and text-->
+    <div class="small-10 small-centered large-3 large-uncentered columns" id="logo-image">
+      <img src="img/new_water.png" alt="" id="logo"/>
+    </div>
+    <div class="small-10 small-centered large-6 large-uncentered columns">
+		<h2 id="logo_text">Integrate<span id="logo_it">IT</span> Australia</h2>
+        <p id="tagline">“integrating technology for your business needs”</p>
+    </div> 
+    <!--End Logo Image and Text-->
+    
+    <!--Social links and Phone-->
+ 	<div class="large-3 columns" id="social_large_columns">
+      <ul class="small-block-grid-4" id="social_small_grid_3">
+              <li><a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48"></i></a></li>
+              <li><a href="#"><i class="fi-social-twitter size-36" ></i></a></li>
+              
+              <li><a href="tel:1300766933"><i class="fi-mobile size-36" ></i></a></li>
+      </ul>
+      <ul class="small-12 columns" id="mobile">
+              
+            <a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+              
+      </ul>
+    </div>
+</div>
+<!--End Social links and phone-->
+ 
+ 
+    
+    
+<!--Nav-->
+<div id="nav">
+    <div class="row">
+    <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name" style="background-color:#049EE8">
+        	<h1><a href="#">IntegrateIT</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    
+    <!--<div class="large-12 columns">-->
+    <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#" data-dropdown="drop1">Services</a>
+        <ul id="drop1" class="f-dropdown" data-dropdown-content>
+        <li><a href="#">Business Support</a></li>
+        <li><a href="#">Maintenance</a></li>
+        <li><a href="#">IT Consulting</a></li>
+        <li><a href="#">IT System Audits</a></li>
+        <li><a href="#">Assessments</a></li>
+        <li><a href="#">Remote Support</a></li>
+        </ul>
+    </li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="#">Vendors</a></li>
+    </ul>
+    
+    
+    </section>
+    </nav>
+    
+    </div>
+</div>
+<!-- End Nav -->
+
+</header>
+<!--End Header-->
+ 
+   <!-- Main Grid Section -->
+ 
+  <div class="row">
+ 
+    <div class="large-3 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+      </div>
+    </div>
+    <div class="large-3  columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+ 
+ 
+  <div class="row">
+ 
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/200x200" />
+        </p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.</p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+ 
+  <div class="row">
+ 
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/400x300" />
+        </p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/400x300" />
+        </p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/400x300" />
+        </p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+ 
+  <div class="row">
+ 
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+    <div class="large-3 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- End Grid Section --> 
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+

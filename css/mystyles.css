@@ -121,63 +121,36 @@ margin-right: 5%;
 .fi-mobile{
 	display:none;
 	}
+	
+	
+	
 /*=============================Navigation========================*/
-/*=====nav background=====*/	
-
-/*trial round buttons*/
-
-/*.nav {
-  list-style: none;
-  text-align: center;
-}
-
-.nav li {
-  position: relative;
-  display: inline-block;
-  margin-right: -4px;
-}
-
-.nav a {
-  display: block;
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  color: #a7a7a7;
-  margin: 36px;
-  width: 144px;
-  height: 144px;
-  position: relative;
-  text-align: center;
-  line-height: 144px;
-  border-radius: 50%;
-  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
-}*/
-/*=================original navigation==============================*/
 
 #nav{
 	width: 100%;
-	/*background-color:#5C5C5C;*/
 	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
 	background-image: linear-gradient(#fff, #ccc);
 	box-shadow: 8px 8px 2px #A29D9E;
-	
+	margin-bottom: 15px;
 }
+
+.contain-to-grid{
+	width: 100%;
+	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+	background-image: linear-gradient(#fff, #ccc);
+	
+	}
+	
 .top-bar-section ul li {
 	float: left;
-	/*border-top: 1px darkgray solid;*/
 	}	
 	
 ul .left li  {
-	/*background-color:black;*/
 		background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
 		background-image: linear-gradient(#fff, #ccc);
 	}
 	
 .top-bar {
-	  /*background-color: #5C5C5C;*/
 		background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
 		background-image: linear-gradient(#fff, #ccc);
 	  }
@@ -190,6 +163,7 @@ ul .left li  {
 	width:100%!important;
 	}
 	
+		
 .top-bar-section ul li > a {
 	display: block;
 	width: 100%;
@@ -205,42 +179,70 @@ ul .left li  {
 	display: block;
 	width: 100%;
 	color: #049EE8;
+	background-color: white!important;
+	box-shadow: 0px 2px 2px #A29D9E!important;
 	}
+	
 
+#selected{
+	background: #5B5A5A!important;
+	color: white;
+	}
 	
 /*======================all dropdown list elements====================*/
-.f-dropdown > * {
-width: 100%!important;
+
+
+.f-dropdown li {
+font-size: 0.875rem;
+cursor: pointer;
+line-height: 1.125rem;
+margin: 0;
+width: 300px;
 }
 
+/*.f-dropdown > * {
+width: 100%!important;
+}*/
 /*======================Main Content=================================*/
 #main-content{
 	width: 100%;
 	background-color: white;
 	}
+	
 
+/*==========================About Information==================================*/	
+.about_information{
+	margin-top: 2%;
+	}
+	
+.about_information h2{
+	margin-top: 0;
+	}
+.about_information p {
+	margin-bottom: 3%;
+	}
 
 /*===========================Orbit Gallery==========================*/
 #gallery{
 	background-color:#91A5B2;
+	padding: 2% 0;
+	margin-bottom: 15px;
 	}	
+	
+#gallery-inverse{
+	background-color:#91A5B2;
+	padding: 2% 0;
+	margin-bottom: 15px;
+	}	
+	
+
 	
 .orbit-container {
 margin-top: 1%;
 padding-bottom: 9px;
 }
 	
-/*==========================Blurb==================================*/	
-#blurb{
-	margin-top: 10%;
-	}
-	
-#blurb h2{
-	margin-top: 20px;
-	}
-#blurb p {
-	margin-bottom: 60px;
-	}
+
 
 /*=========================4 Content Blocks=======================*/
 #four-block-heading{
@@ -275,17 +277,73 @@ padding-bottom: 9px;
 /*===============================Footer============================*/	
 #footer {
 	width: 100%;
-	padding: 20px 0;
+	padding: 7px 0;
 	background-color:#91A5B2;
-	margin-top: 5%;
+	
 	}
+	
 #footer-insert {
 	width: 100%;
 	background-color: white;
-	margin: 1% 0;
-	padding: 2% 0;
+	margin: 0% 0;
+	padding: 0% 0;
 	}
+	
+#footer_content{
+		margin-top: 2%
+		}
+		
+/*=================================Contact Us=======================*/
 
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+textarea {
+	height:213px;
+	background:#efefef;
+}
+
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+
+#map{margin-left: 0;}
 
 }
 @media only screen and (max-width: 40em) {

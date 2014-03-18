@@ -49,7 +49,8 @@
 <!--Nav-->
 <div id="nav">
     <div class="row">
-    <nav class="top-bar" data-topbar>
+    <div class="contain-to-grid sticky">
+    <nav class="top-bar" data-topbar data-options="sticky_class:sticky;">
     <ul class="title-area">
         <li class="name" style="background-color:#049EE8">
         	<h1><a href="#">IntegrateIT</a></h1>
@@ -61,25 +62,26 @@
     <section class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class="left">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#" data-dropdown="drop1">Services</a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" id="selected">About</a></li>
+    <li><a href="services.html" data-dropdown="drop1">Services</a>
         <ul id="drop1" class="f-dropdown" data-dropdown-content>
-        <li><a href="#">Business Support</a></li>
-        <li><a href="#">Maintenance</a></li>
-        <li><a href="#">IT Consulting</a></li>
-        <li><a href="#">IT System Audits</a></li>
-        <li><a href="#">Assessments</a></li>
-        <li><a href="#">Remote Support</a></li>
+        <li><a href="#">Professional IT Services</a></li>
+        <li><a href="#">Managed Services </a></li>
+        <li><a href="#">Disaster recovery & Business Continuity</a></li>
+        <li><a href="#">IT Consulting / Audit Services</a></li>
+        <li><a href="#">Cloud Computing</a></li>
+        <li><a href="#">Wireless Solutions</a></li>
         </ul>
     </li>
-    <li><a href="#">Contact Us</a></li>
+    <li><a href="contact.php">Contact Us</a></li>
     <li><a href="#">Vendors</a></li>
     </ul>
     
     
     </section>
     </nav>
+    </div>
     
     </div>
 </div>
@@ -89,57 +91,101 @@
 <!--End Header-->
 
 <div id="main-content"> 
- 
-
-
-
-
 
 <!--Blurb-->
-    <div class="row">
-        <div id="blurb">
-            <div class="small-10 small-centered large-12 large-uncentered">
-                <h2>About <span class="integrate-blue">Integrate</span>IT <span class="integrate-blue">Australia</span></h2>
-            </div>
-                <p>IntegrateIT Australia is a leading provider of IT solutions and support to business’ within Australia. We look at increasing efficiency, productivity and profitability for all of our clients through increased uptime and hardware/software quality. We work with you to get the most out of your IT infrastructure. Our proactive approach allows us to eliminate most technical issues within your network before they occur.
-    </p>
+<div class="row" >
+
+    <div class="small-10 small-centered large-12 columns" >
+    
+    
+        <div class="about_information">
+            <h4>About <span class="integrate-blue">Us</span></h4>
+        
+    
+        <p>At <span class="integrate-blue">Integrate</span>IT <span class="integrate-blue">Australia</span>, we provide quality IT services and solutions for all sizes of business. We plan, design and implement all your IT and network needs, working with you to create the best solution given your individual needs. Based in Queensland and Northern New South Wales, we cover Australia nationally supporting clients anywhere. With fast response times, we get you back working as quickly as possible.
+        </p>
+    
+        <p><span class="integrate-blue">Integrate</span>IT was founded with the intention to better provide IT services and solutions to our clients. The two founders of <span class="integrate-blue">Integrate</span>IT have more than 30 years’ experience of combined technical experience from working in a broad array of companies and industries.
+        </p>
+    </div>    
+ </div>
+</div> 
+
+<!--Services-->
+<div id="gallery-inverse">
+  <div class="row">
+      <div class="small-12 large-5 columns">
+          <h4 style="font-style: italic; color: white">We service all industries including:</h4>
+               <ul style="color: white">
+                <li><p>Accountants</p></li>
+                <li><p>Solicitors</p></li>
+                <li><p>Building  / Construction</p></li>
+                <li><p>Quantity Surveyors</p></li>
+                <li><p>Engineering / Architects</p></li>
+            </ul> 
+      </div>  
+        
+  <!--Orbit Services--> 
+ <div class="small-12 large-7 columns">
+    <ul data-orbit>
+  <li>
+    <img src="img/accountants.jpg"alt="accountants" />
+    <div class="orbit-caption">
+      Accounting
+    </div>
+  </li>
+  <li>
+    <img src="img/soliciting.jpg" alt="solicitors" />
+    <div class="orbit-caption">
+	Solicitors    
+    </div>
+  </li>
+  <li>
+    <img src="img/building.jpg" alt="building&construction" />
+    <div class="orbit-caption">
+      Building / Construction
+    </div>
+  </li>
+  <li>
+    <img src="img/quantitive.jpg" alt="quantity_surveying" />
+    <div class="orbit-caption">
+      Quantity Surveying
+    </div>
+  </li>
+  <li>
+    <img src="img/architects.jpg" alt="architects" />
+    <div class="orbit-caption">
+	Architects & Engineering    
+    </div>
+  </li>
+</ul>
+        </div>
+    </div> 
+</div>    
+      
+
+
+<div class="row">
+	<div class="small-10 small-centered large-12 columns"> 
+    <div class="about_information">
+  		<p>We provide our services through industry focused staff that are committed to providing you a high level of customer satisfaction and service level but at the same time delivering a personalised service. Our intent is to develop long term business relationships with our clients in which they can have both trust and faith in their IT provider. We strive to excel in this while providing a high level of technical support to our clients. We also have a great ‘word of mouth’ reputation.
+        </p>
+        
+      <p>Communication is a key issue in IT, where many providers do not communicate well with their clients. At <span class="integrate-blue">Integrate</span>IT, we pride ourselves with being able to communicate with our clients and talking to them on a regular basis to ensure everything is working as intended.
+        </p>
         </div>
     </div>
-<!--End Blurb-->
 
-<!-- Second Band (Image Left with Text) -->
-<div class="row"> 
-    <div class="large-4 columns">
-    	<img src="http://placehold.it/400x300&text=[img]">
-    </div>
-    <div class="large-8 columns">
-   		<h4>This is a content section.</h4> 
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
-        </p>
-    </div>
-</div>
-
-
-<!-- Third Band (Image Right with Text) -->
-<div class="row">
-   <div class="large-8 columns">
-      <h4>This is a content section.</h4>
-         <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
-         </p> 
-    </div>
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]">
-    </div>
 </div>
 <!--End Main Content-->
 
-<!-- Footer -->
-<footer id="footer">  
-	<div id="footer-insert">
-        <div class="row">
-                <div class="large-12 columns">
-                
+<!-- Footer --> 
+<footer id="footer"> 
+	<div id="footer-insert"> 
+		<div class="row"> <!--full block-->
+        <div class="large-12 columns" ><!--width of content in footer-->
                     <div class="row">
+                    <div id="footer_content">
                         <div class="large-6 columns">
                         <p>© IntegrateIT Australia</p>
                         </div>
@@ -152,6 +198,7 @@
                                 <li><a href="#">Vendors</a></li>
                             </ul>
                         </div>
+                        </div>
                     </div>
                   </div> 
         </div>
@@ -161,12 +208,29 @@
  
    
     
-    <script src="js/vendor/jquery.js"></script>
+     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+		  orbit : {
+			  		animation:'fade',
+			  		slide_number: false,
+		   			navigation_arrows: false,
+					animation_speed: 500,
+					timer_speed: 2500,
+					bullets: false
+					},
+					
+		topbar : {
+					sticky_class:'sticky',
+					scrolltop : true
+					}
+		  });
   </script>
-  
+    
+   
+
   
     
   </body>

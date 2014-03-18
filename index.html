@@ -49,6 +49,7 @@
 <!--Nav-->
 <div id="nav">
     <div class="row">
+    <div class="contain-to-grid sticky">
     <nav class="top-bar" data-topbar>
     <ul class="title-area">
         <li class="name" style="background-color:#049EE8">
@@ -61,25 +62,26 @@
     <section class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class="left">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#" data-dropdown="drop1">Services</a>
+    <li><a href="index.html" id="selected">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html" data-dropdown="drop1">Services</a>
         <ul id="drop1" class="f-dropdown" data-dropdown-content>
-        <li><a href="#">Business Support</a></li>
-        <li><a href="#">Maintenance</a></li>
-        <li><a href="#">IT Consulting</a></li>
-        <li><a href="#">IT System Audits</a></li>
-        <li><a href="#">Assessments</a></li>
-        <li><a href="#">Remote Support</a></li>
+        <li><a href="#">Professional IT Services</a></li>
+        <li><a href="#">Managed Services </a></li>
+        <li><a href="#">Disaster recovery & Business Continuity</a></li>
+        <li><a href="#">IT Consulting / Audit Services</a></li>
+        <li><a href="#">Cloud Computing</a></li>
+        <li><a href="#">Wireless Solutions</a></li>
         </ul>
     </li>
-    <li><a href="#">Contact Us</a></li>
+    <li><a href="contact.php">Contact Us</a></li>
     <li><a href="#">Vendors</a></li>
     </ul>
     
     
     </section>
     </nav>
+    </div>
     
     </div>
 </div>
@@ -96,7 +98,7 @@
 <!--Orbit Slider-->
  <div id="gallery">
      <div class="row">
-      	<ul id="slider" class="grid-12 columns" data-orbit data-options="slide_number: false; navigation_arrows: false;timer_speed: 2000">
+      	<ul id="slider" class="grid-12 columns" data-orbit >
       		<li>
         		<img src="img/moonshine-server.jpg"  alt="slide 1" />
         			<div class="orbit-caption">
@@ -160,25 +162,25 @@
 <!--Four Content Blocks -->
   <div class="row">
    <div class="large-3 columns four-blocks">
-    <img src="img/ring.jpg" />
+    <img src="img/it_services.jpg"/>
       <h4 class="four-block-heading">Support</h4>
       <p>When you are on a support plan with IntegrateIT, you are assigned an engineer as your primary contact. We come out on a scheduled monthly visit and check your network and infrastructure for any issues. </p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/backup.jpg" />
+      <img src="img/disaster_recovery.jpg" />
       	<h4 class="four-block-heading" >Disaster Recovery</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/solutions2.jpg" />
-      	<h4 class="four-block-heading">Software Sales</h4>
+      <img src="img/managed_services.jpg" />
+      	<h4 class="four-block-heading">Managed Services</h4>
       	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/solutions.jpg" />
+      <img src="img/it_consulting_audit.jpg" />
       	<h4 class="four-block-heading" >Auditing/Consulting</h4>
       	<p>We provide audits of your infrastructure to detect issues and possible future issues. We will provide a full written report of the audit for you to keep.</p>
     </div>
@@ -194,7 +196,7 @@
                     	<p>Our team of professionals are ready to take your call. Our commitment to you is to keep improving your business and taking your business to the next level.</p>
                     </div>
                     <div class="large-3 columns">
-                    	<a href="#" class="radius button right">Contact Us</a>
+                    	<a href="contact.php" class="radius button right">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -205,24 +207,25 @@
 
 <!--End Main Content-->
 
-<!-- Footer -->
-<footer id="footer">  
-	<div id="footer-insert">
-        <div class="row">
-                <div class="large-12 columns">
-                
+<!-- Footer --> 
+<footer id="footer"> 
+	<div id="footer-insert"> 
+		<div class="row"> <!--full block-->
+        <div class="large-12 columns" ><!--width of content in footer-->
                     <div class="row">
+                    <div id="footer_content">
                         <div class="large-6 columns">
                         <p>© IntegrateIT Australia</p>
                         </div>
                         <div class="large-6 columns">
                             <ul class="inline-list right">
-                                <li><a href="#">Home</a></li>
+                                <li id="selected"><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Vendors</a></li>
                             </ul>
+                        </div>
                         </div>
                     </div>
                   </div> 
@@ -235,8 +238,18 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+		  orbit : {slide_number: false,
+		   			navigation_arrows: false,
+					timer_speed: 2000
+					},
+					
+		topbar : {sticky_class:'sticky',
+					scrolltop : true
+					}
+		  });
   </script>
   
   
