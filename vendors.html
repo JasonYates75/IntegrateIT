@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/mystyles.css" />
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    <title>Vendors</title>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     
     <script src="js/vendor/modernizr.js"></script>
-    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+   
 </head> 
 <body>
   
@@ -43,13 +47,12 @@
       
       
       <div class="small-12 large-12 columns">
-		<a href="http://aus.myconnectwise.net/integrateit" class="button right">Service Desk Client Login</a><br>
+		<a href="http://aus.myconnectwise.net/integrateit" class="button  right">Service Desk Client Login</a><br>
       </div>
         
     </div>
 </div>
 <!--End Logo, Social links, phone and support-->
- 
  
  
     
@@ -70,8 +73,8 @@
                 <section class="top-bar-section">
                 <!-- Left Nav Section -->
                     <ul class="left">
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="about.html" class="selected">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li class="has-dropdown">
                             <a href="services.html">Services</a>
                                 <ul class="dropdown">
@@ -90,7 +93,7 @@
                         </li>
                     <li><a href="support.html">Support</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="vendors.html" class="selected">Vendors</a></li>
                     </ul>
                 
                 
@@ -105,112 +108,60 @@
 </header>
 <!--End Header-->
 
-<div id="main-content"> 
-
-<!--Blurb-->
-<div class="row" >
-
-    <div class="small-10 small-centered large-12 columns" >
-    
-    
-        <div class="about_information">
-            <h2>About <span class="integrate-blue">Us</span></h2>
-        
-    
-        <p>At <span class="integrate-blue">Integrate</span>IT <span class="integrate-blue">Australia</span>, we provide quality IT services and solutions for all sizes of business. We plan, design and implement all your IT and network needs, working with you to create the best solution given your individual needs. Based in Queensland and Northern New South Wales, we cover Australia nationally supporting clients anywhere. With fast response times, we get you back working as quickly as possible.
-        </p>
-    
-        <p><span class="integrate-blue">Integrate</span>IT was founded with the intention to better provide IT services and solutions to our clients. The two founders of <span class="integrate-blue">Integrate</span>IT have more than 30 years’ experience of combined technical experience from working in a broad array of companies and industries.
-        </p>
-    </div>    
- </div>
-</div> 
-
-<!--Services-->
-<div id="gallery-inverse">
-  <div class="row">
-      <div class="small-12 large-5 columns">
-          <h4 style="font-style: italic; color: white">We service all industries including:</h4>
-               <ul style="color: white">
-                <li><p>Accountants</p></li>
-                <li><p>Solicitors</p></li>
-                <li><p>Building  / Construction</p></li>
-                <li><p>Quantity Surveyors</p></li>
-                <li><p>Engineering / Architects</p></li>
-            </ul> 
-      </div>  
-        
-  <!--Orbit Services--> 
- <div class="small-12 large-7 columns">
-    <ul data-orbit>
-  <li>
-    <img src="img/accountants.jpg"alt="accountants" />
-    <div class="orbit-caption">
-      Accounting
-    </div>
-  </li>
-  <li>
-    <img src="img/soliciting.jpg" alt="solicitors" />
-    <div class="orbit-caption">
-	Solicitors    
-    </div>
-  </li>
-  <li>
-    <img src="img/building.jpg" alt="building&construction" />
-    <div class="orbit-caption">
-      Building / Construction
-    </div>
-  </li>
-  <li>
-    <img src="img/quantitive.jpg" alt="quantity_surveying" />
-    <div class="orbit-caption">
-      Quantity Surveying
-    </div>
-  </li>
-  <li>
-    <img src="img/architects.jpg" alt="architects" />
-    <div class="orbit-caption">
-	Architects & Engineering    
-    </div>
-  </li>
-</ul>
-        </div>
-    </div> 
-</div>    
-      
+<!--Main Content-->
+<div class="row" id="blurb">
+	<h3>Partners</h3>
+		<p style="font-style:italic">We have partnered up with a range of companies to better service our clients:</p>
+		<hr>
+        <ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-3 vendor-list four-blocks-vendors" >
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+</div>
 
 
 <div class="row">
-	<div class="small-10 small-centered large-12 columns"> 
-    <div class="about_information">
-  		<p>We provide our services through industry focused staff that are committed to providing you a high level of customer satisfaction and service level but at the same time delivering a personalised service. Our intent is to develop long term business relationships with our clients in which they can have both trust and faith in their IT provider. We strive to excel in this while providing a high level of technical support to our clients. We also have a great ‘word of mouth’ reputation.
-        </p>
-        
-      <p>Communication is a key issue in IT, where many providers do not communicate well with their clients. At <span class="integrate-blue">Integrate</span>IT, we pride ourselves with being able to communicate with our clients and talking to them on a regular basis to ensure everything is working as intended.
-        </p>
-        </div>
-    </div>
+	<h3>Hardware and Software Suppliers</h3>
+		<p style="font-style:italic">We also support a vast range of hardware and software products including:</p>
+<hr>
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 suppliers four-blocks-vendors" >
+          <li><img src="img/vendors/ibm.jpg"></li>
+          <li><img src="img/vendors/myob.jpg"></li> 
+          <li><img src="img/vendors/aps.jpg"></li>
+          <li><img src="img/vendors/sage.jpg"></li>
+          <li><img src="img/vendors/lexis.jpg"></li>
+          <li><img src="img/vendors/citrix.jpg"></li>
+          <li><img src="img/vendors/apc.jpg"></li>
+          <li><img src="img/vendors/wyse.jpg"></li>
+          <li><img src="img/vendors/vmware.jpg"></li>
+          <li><img src="img/vendors/eaton.jpg"></li>
+          <li><img src="img/vendors/toshiba.jpg"></li>
+          <li><img src="img/vendors/netcomm.jpg"></li>
+          <li><img src="img/vendors/google.jpg"></li>
+          <li><img src="img/vendors/lg.jpg"></li>
+          <li><img src="img/vendors/netgear.jpg"></li>
+          <li><img src="img/vendors/kingston.jpg"></li>
+    </ul>
+	</div>
+<!--End main Content-->
 
+<!--Trademark -->
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<p style="font-style:italic; font-size:12px">All trademarks, product names, and company names and logos appearing on this Site are the property of their respective owner.</p>
+	</div>
 </div>
-<!--End Main Content-->
 
-<!-- Call to Action Panel -->
-    <div class="row" id="call-to-action">
-        <div class="large-12 columns">
-            <div class="panel">
-                <div class="row">
-                    <div class="large-9 columns">
-                    	<p>Our team of professionals are ready to take your call. Our commitment to you is to keep improving your business and taking your business to the next level.</p>
-                    </div>
-                    <div class="large-3 columns">
-                    	<a href="contact.php" class="radius button right">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-<!-- End Call to Action Panel -->
 
 
 <!-- Footer --> 
@@ -227,12 +178,12 @@
                         <div class="large-6 columns">
                             <ul class="inline-list right" id="footer-menu-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html"  class="selected">About Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="solutions.html">Solutions</a></li>
                                 <li><a href="support.html">Support</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>
-                                <li><a href="vendors.html">Vendors</a></li>
+                                <li><a href="vendors.html"  class="selected">Vendors</a></li>
                                 <li><a href="terms_conditions.html">Terms of Use & Conditions</a></li>
                             </ul>
                         </div>
@@ -242,32 +193,28 @@
         </div>
     </div>
 </footer>
- <!-- End Footer --> 
+ <!-- End Footer -->
+ 
    
-    
-     <script src="js/vendor/jquery.js"></script>
+   
+<!--Foundation Scripts-->    
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
     <script>
       $(document).foundation({
-		  orbit : {
-			  		animation:'fade',
-			  		slide_number: false,
+		  orbit : {slide_number: false,
 		   			navigation_arrows: false,
-					animation_speed: 500,
-					timer_speed: 2500,
-					bullets: false
+					timer_speed: 2000
 					},
 					
-		topbar : {
-					sticky_class:'sticky',
+		topbar : {sticky_class:'sticky',
 					scrolltop : true
 					}
 		  });
   </script>
-    
-   
-
+  
+ 
+  
   
     
   </body>
