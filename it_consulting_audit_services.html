@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
+    
     
 </head> 
 <body>
   
 <!--Header-->
 <header id="header">
+<!--Logo, Social links, phone and support-->
 <div class="row">
   <!--Logo Image and text-->
     <div class="small-10 small-centered large-3 large-uncentered columns" id="logo-image">
@@ -36,7 +54,7 @@
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -47,7 +65,7 @@
         
     </div>
 </div>
-<!--End Social links and phone-->
+<!--End Logo, Social links, phone and support-->
  
  
     
@@ -68,20 +86,20 @@
                 <section class="top-bar-section">
                 <!-- Left Nav Section -->
                     <ul class="left">
-                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li class="has-dropdown">
                             <a href="services.html"  class="selected">Services</a>
                                 <ul class="dropdown">
                                 <li><a href="professional_it.html">Professional IT Services</a></li>
                                 <li><a href="managed_services.html">Managed Services </a></li>
-                                <li><a href="it_consulting_audit_services.html" class="selected">IT Consulting / Audit Services</a></li>
+                                <li><a href="it_consulting_audit_services.html"   class="selected">IT Consulting / Audit Services</a></li>
                               </ul>
                         </li>
                         <li class="has-dropdown">
                             <a href="solutions.html">Solutions</a>
                             <ul class="dropdown">
-                                <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                                <li><a href="cloud_solutions.html">Cloud Solutions</a></li>
                                <li><a href="disaster_recovery_business_continuity.html">Disaster Recovery & Business Continuity</a></li>
                                <li><a href="wireless_solutions.html">Wireless Solutions</a></li>
                             </ul>
@@ -99,14 +117,16 @@
     </div>
 </div>
 <!-- End Nav -->
+
 </header>
 <!--End Header-->
 
 
 <!-- First Band (Slider) -->
 
-<div id="main-content"> 
-    <div class="row">
+<div id="main-content-index"> 
+ 
+        <div class="row">
         <div class="small-12 large-12 columns">
         	<h2>IT Consulting / Audit Services</h2>
         		<h5><span style="font-style:italic">Using technology as a tool to solve business challenges</span></h5>
@@ -177,10 +197,30 @@
                 </div>
             </div>
     </div>
-    
-<!-- End Call to Action Panel -->
 </div>
 <!--End Main Content-->
+
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
 
 <!-- Footer --> 
 <footer id="footer"> 
@@ -212,11 +252,13 @@
     </div>
 </footer>
  <!-- End Footer -->
+ 
+   
    
     
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
 		  orbit : {slide_number: false,
@@ -229,6 +271,8 @@
 					}
 		  });
   </script>
+  
+  
   
   
     

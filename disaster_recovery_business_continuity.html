@@ -4,17 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disaster Recovery and Business Continuity</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/mystyles.css" />
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: false,
+		 pager: false,
+      });
+    });
+      </script>
 </head> 
 <body>
   
 <!--Header-->
 <header id="header">
+<!--Logo, Social links, phone and support-->
 <div class="row">
   <!--Logo Image and text-->
     <div class="small-10 small-centered large-3 large-uncentered columns" id="logo-image">
@@ -36,7 +53,7 @@
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -47,7 +64,7 @@
         
     </div>
 </div>
-<!--End Social links and phone-->
+<!--End Logo, Social links, phone and support-->
  
  
     
@@ -68,7 +85,7 @@
                 <section class="top-bar-section">
                 <!-- Left Nav Section -->
                     <ul class="left">
-                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li class="has-dropdown">
                             <a href="services.html">Services</a>
@@ -79,10 +96,10 @@
                               </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="solutions.html" class="selected">Solutions</a>
+                            <a href="solutions.html"  class="selected">Solutions</a>
                             <ul class="dropdown">
                                 <li><a href="cloud_solutions.html">Cloud Solutions</a></li>
-                               <li><a href="disaster_recovery_business_continuity.html" class="selected">Disaster Recovery & Business Continuity</a></li>
+                               <li><a href="disaster_recovery_business_continuity.html"  class="selected">Disaster Recovery & Business Continuity</a></li>
                                <li><a href="wireless_solutions.html">Wireless Solutions</a></li>
                             </ul>
                         </li>
@@ -106,36 +123,49 @@
 
 <!-- First Band (Slider) -->
 
-<div id="main-content"> 
-    <div class="row">
-        <div class="small-12 large-12 columns">
-        <h2>Disaster Recovery & Business Continuity</h2>
-        <h5 style="font-style:italic">Have you considered the four major cost factors of a system failure:</h5>
-        </div>
-        </div>
-        
-        <div class="row">
-        <div class="small-12 large-12  columns">
-        	<p>A disaster recovery (DR) plan in essence is a contingency plan for when unforeseen catastrophes are cast upon your business. It is not just data loss you need to be concerned with, but also hardware loss and replacement costs, and the downtime your business and staff will experience.</p>
-            
-            <p>A company’s entire history of communications, business dealings, accounts and financials, and often products are stored within the IT system. Without this information, many companies may be unable to operate.</p> 
-		</div>
-        </div>
-        
-        <div id="gallery-inverse">
-            <div class="row">
-                <div class="small-12 medium-6 large-6  columns">
-                    <p style="color:white">Protection of data through backup, within business IT systems has become the most crucial aspect of daily IT management and maintenance. Precision IT work with organisations to develop backup strategies that ensure that all data is protected all of the time.</p> 
-        
-                    <p style="color:white">Extending your backup strategy to ensure your business can recovery from a disaster like an office fire or flooding can be somewhat difficult. Backups are traditionally designed to protect against accidental data loss or corruption.</p> 
+<div id="main-content-index"> 
+ 
+        <!--First Tier-->
+             <div class="row">
+                <div class="small-12 large-12 columns">
+                    <h2>Disaster Recovery & Business Continuity</h2>
+                 <h5 style="font-style:italic">Have you considered the four major cost factors of a system failure:</h5>
                 </div>
-            
-               <div class="small-12 medium-6 large-6  columns">
-                 <img src="img/disaster_recovery.jpg" alt="disaster recovery"/>
+            </div>
+        <!--End First Tier-->
+
+
+
+
+        <!--Secont Tier-->
+           <div class="row">
+                <div class="small-12 large-12  columns">
+                    <p>A disaster recovery (DR) plan in essence is a contingency plan for when unforeseen catastrophes are cast upon your business. It is not just data loss you need to be concerned with, but also hardware loss and replacement costs, and the downtime your business and staff will experience.</p>
+                
+                    <p>A company’s entire history of communications, business dealings, accounts and financials, and often products are stored within the IT system. Without this information, many companies may be unable to operate.</p> 
+                </div>
+        	</div>
+        <!--End Second Tier-->
+
+    
+
+        <!--Third Tier -->
+            <div id="gallery-inverse">
+                    <div class="row">
+                        <div class="small-12 medium-6 large-6  columns">
+                            <p style="color:white">Protection of data through backup, within business IT systems has become the most crucial aspect of daily IT management and maintenance. Precision IT work with organisations to develop backup strategies that ensure that all data is protected all of the time.</p> 
+                
+                            <p style="color:white">Extending your backup strategy to ensure your business can recovery from a disaster like an office fire or flooding can be somewhat difficult. Backups are traditionally designed to protect against accidental data loss or corruption.</p> 
+                        </div>
+                    
+                       <div class="small-12 medium-6 large-6  columns">
+                         <img src="img/disaster_recovery.jpg" alt="disaster recovery"/>
+                       </div>
+                   </div>
                </div>
-           </div>
-       </div>
+        <!--End Third Tier -->   
         
+        <!--Fourth Tier-->
         <div class="row">
         	<div class="small-12 large-12 columns">
 				<p><span class="integrate-blue">Integrate</span>IT <span class="integrate-blue">Australia</span> have proficient experience in enhancing backup strategies to ensure an effective disaster recovery plan is in place, that entire systems can be recovered and that the business can continue thereafter.</p> 
@@ -143,11 +173,11 @@
             
 				<p>We can work with your company to design an entire disaster recovery and business continuity virtual IT infrastructure to restore your business systems and continue your business operations within a timeframe between 15minutes to 8hours (depending on business requirements).</p>
 
-       </div>
-       </div>     
+       		</div>
+       </div>  
+        <!--End Fourth Tier-->
         
-		
-</div>
+        
 
 <!-- Call to Action Panel -->
     <div class="row" id="call-to-action">
@@ -167,9 +197,36 @@
         </div>
         </div>
     
-<!-- End Call to Action Panel -->
+<!-- End Call to Action Panel --> 
+        
+    </div>
 
 <!--End Main Content-->
+
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
+
+
+
 
 <!-- Footer --> 
 <footer id="footer"> 
@@ -186,8 +243,8 @@
                             <ul class="inline-list right" id="footer-menu-list">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="solutions.html"  class="selected">Solutions</a></li>
+                                <li><a href="services.html"  class="selected">Services</a></li>
+                                <li><a href="solutions.html">Solutions</a></li>
                                 <li><a href="support.html">Support</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>
                                 <li><a href="vendors.html">Vendors</a></li>
@@ -203,10 +260,11 @@
  <!-- End Footer -->
  
    
+   
     
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
 		  orbit : {slide_number: false,
@@ -221,7 +279,8 @@
   </script>
   
   
+  
+  
     
   </body>
 </html>
-

@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
     
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
-   
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
 </head> 
 <body>
   
@@ -36,12 +48,12 @@
       <ul class="small-block-grid-4" id="social_small_grid_3">
               <li><a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48"></i></a></li>
               <li><a href="#"><i class="fi-social-twitter size-36" ></i></a></li>
-              <li><a href="tel:1300766933"><i class="fi-mobile size-36" ></i></a></li>
+              <li><a href="tel:1300796933"><i class="fi-mobile size-36" ></i></a></li>
       </ul>
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -184,28 +196,28 @@
 <!--Four Content Blocks -->
   <div class="row">
    <div class="large-3 columns four-blocks">
-    <img src="img/it_services.jpg"/>
-      <h4 class="four-block-heading">Support</h4>
+    <a href="support.html"><img src="img/it_services.jpg"/></a>
+      <h4 class="four-block-heading"><a href="support.html">Support</a></h4>
       <p>When you are on a support plan with IntegrateIT, you are assigned an engineer as your primary contact. We come out on a scheduled monthly visit and check your network and infrastructure for any issues. </p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/disaster_recovery.jpg" />
-      	<h4 class="four-block-heading" >Disaster Recovery</h4>
+      <a href="disaster_recovery_business_continuity.html"><img src="img/disaster_recovery.jpg" /></a>
+      	<h4 class="four-block-heading"><a href="disaster_recovery_business_continuity.html">Disaster Recovery</a></h4>
       <p>A disaster recovery (DR) plan in essence is a contingency plan for when unforeseen catastrophes are cast upon your business. It is not just data loss you need to be concerned with, but also hardware loss and replacement costs, and the downtime your business and staff will experience.
 
 </p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/managed_services.jpg" />
-      	<h4 class="four-block-heading">Managed Services</h4>
+      <a href="managed_services.html"><img src="img/managed_services.jpg" /></a>
+      	<h4 class="four-block-heading"><a href="managed_services.html">Managed Services</a></h4>
       	<p>When one of the servers in a network goes down in your environment, everything grinds to a halt. Many IT service providers offer the traditional “Break Fix” service, waiting around until something goes wrong. IntegrateIT Australia would rather your company not suffer a loss of productivity, that's why our service is highly proactive and we focus on preventing problems.</p>
     </div>
     
     <div class="large-3 columns four-blocks">
-      <img src="img/it_consulting_audit.jpg" />
-      	<h4 class="four-block-heading" >Auditing/Consulting</h4>
+      <a href="it_consulting_audit_services.html"><img src="img/it_consulting_audit.jpg" /></a>
+      	<h4 class="four-block-heading" ><a href="it_consulting_audit_services.html">Auditing/Consulting</a></h4>
       	<p>We provide audits of your infrastructure to detect issues and possible future issues. We will provide a full written report of the audit for you to keep.</p>
     </div>
   </div>
@@ -226,21 +238,29 @@
             </div>
         </div>
         </div>
+  <!-- End Call to Action Panel -->      
+        
     </div>
-<!-- End Call to Action Panel -->
+
 <!--End Main Content-->
 
 <!--Vendor Slider-->
-<div class="row" id="box-slider">
-    <div class="small-12 large-12 columns">
-        <div class="bxslider">
-          <div class="slide"><img src="img/office365.jpg"></div>
-          <div class="slide"><img src="img/microsoft.jpg"></div>
-          <div class="slide"><img src="img/citrix.jpg"></div>
-          <div class="slide"><img src="img/cyberoam.jpg"></div>
-          <div class="slide"><img src="img/hp.jpg"></div>
-          <div class="slide"><img src="img/trend.jpg"></div>
-        </div>
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
     </div>
 </div>
 
@@ -299,18 +319,7 @@
 		  });
   </script>
   
-  <script>
-      $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        slideWidth: 200,
-        minSlides: 5,
-        maxSlides: 10,
-        slideMargin: 15,
-		 auto: true,
-		 pager: false,
-      });
-    });
-      </script>
+  
   
   
     

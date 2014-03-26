@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
     
     
+    <script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'clean'
+ };
+ </script>
 </head> 
 <body>
   
@@ -38,7 +59,7 @@
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -120,7 +141,7 @@
  <!--Form Cont
  ent and Map--> 
  <div id="gallery">
-		
+
 
    <div class="row">
    	<div class=" small-12 large-7 columns">
@@ -129,75 +150,90 @@
                 <div class="content" data-slug="panel1">
                 
                 
-                
-               <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = ''; 
-    $to = 'jason@jasonyates75.com.au'; 
-    $subject = 'Hello';
-    $human = $_POST['human'];
-			
+ <?php 
+    if(isset($_POST['submit'])) {
+     
+        // check reCAPTCHA information
+        require_once('recaptchalib.php');
+         
+        $privatekey = "<6LcmJfASAAAAAGTnqMwe3-C-_6auOBQ2c86weUDj>";
+        $resp = recaptcha_check_answer ($privatekey,
+                                    $_SERVER["REMOTE_ADDR"],
+                                    $_POST["recaptcha_challenge_field"],
+                                    $_POST["recaptcha_response_field"]);
+         
+        // if CAPTCHA is correctly entered!                        
+        if ($resp->is_valid) {
+            // great success!
+			 $name = $_POST['name'];
+   			 $email = $_POST['email'];
+    		 $message = $_POST['message'];
+    		 $to = 'jason@jasonyates75.com.au'; 
+    		 $subject = 'Hello';
+    
+
     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-				
-    if ($_POST['submit'] && $human == '4') {				 
-        if (mail ($to, $subject, $body, $from)) { 
+
+    if ($_POST['submit']) {				 
+        if (mail ($to, $subject, $body)) { 
 	    echo '<p>Your message has been sent!</p>';
 	} else { 
 	    echo '<p>Something went wrong, go back and try again!</p>'; 
 	} 
-    } else if ($_POST['submit'] && $human != '4') {
-	echo '<p>You answered the question incorrectly!</p>';
+    }                   
+        } else {
+            // CAPTCHA entries are incorrect
+        }
     }
-?>
+?>   
+
+            
+ 
                
                <form method="post" action="contact.php">
         
-                <div class="row collapse">
-                <div class="large-2 columns">
-                <label class="inline">Name</label>
-                </div>
-                <div class="large-10 columns">
-                <input name="name" type="text" placeholder="John Smith" >
-                </div>
-                </div>
-                
-                <div class="row collapse">
-                <div class="large-2 columns">       
-                <label class="inline">Email</label>
-                </div>
-                <div class="large-10 columns">  
-                <input name="email" type="email" placeholder="someone@somewhere.com" >
-                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Name
+                       	 <input name="name" type="text" placeholder="John Smith" >
+                        </label>
+                    </div>
                 </div>
                 
-                <div class="row collapse">
-                <div class="large-2 columns">       
-                <label class="inline">Phone</label>
-                </div>
-                <div class="large-10 columns">  
-                <input name="phone" type="tel" placeholder="0421 XXXX XX" >
-                </div>
-                </div>
-                
-                <div class="row collapse">
-                <div class="large-2 columns">    
-                <label class="inline">Message</label>
-                </div>
-                 <div class="large-10 columns"> 
-                <textarea name="message" cols="10" placeholder="Leave a message"></textarea>
-                </div>
+                <div class="row">
+                    <div class="large-12 columns">       
+                        <label>Email
+                        	<input name="email" type="email" placeholder="someone@somewhere.com" >
+                        </label>
+                    </div>
                 </div>
                 
-                <div class="row collapse">
-                <div class="large-2 columns"> 
-                <label class="inline">What is 2+2?</label>	
+                <div class="row">
+                    <div class="large-12 columns">       
+                        <label>Phone 
+                       	 <input name="phone" type="tel" placeholder="0421 XXXX XX" >
+                        </label>
+                    </div>
                 </div>
-                <div class="large-10 columns">
-                <input name="human" type="text" placeholder="Your Answer">
+                
+                <div class="row">
+                    <div class="large-12 columns">  
+                    	<label>Message
+                        <textarea name="message" placeholder="Message"></textarea>
+                      </label>
+                    </div>
                 </div>
-                </div>
+                
+                <div>
+                    <?php
+                      require_once('recaptchalib.php');
+                      $publickey = "<6LcmJfASAAAAAEGBzYJysmVageSLFw2FEYnYU20k>";
+                      echo recaptcha_get_html($publickey);
+                    ?>
+    			</div>
+                <br/>
+                
+             
                         
                 <button id="submit" name="submit" type="submit" value="submit">SUBMIT</button>
 				</form>
@@ -237,6 +273,10 @@
 <!--End Gallery-->
 <!-- End Contact Details -->
 <!-- End Main Content -->
+
+
+
+
 
 <!-- Footer --> 
 <footer id="footer"> 

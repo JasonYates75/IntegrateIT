@@ -356,7 +356,9 @@ padding-bottom: 9px;
 	margin-bottom: 5%;
 	}
 
-
+ul.bxslider{
+	margin-left:0.1rem!important;
+}
 
 
 
@@ -433,8 +435,10 @@ input:focus, textarea:focus {
 }
 
 
-#map{margin-left: 0;
-}
+#map {
+	margin-left: 0;
+	margin-top: 2%;
+	}
 
 /*==========================Vendor list==============================*/
 .vendor-list img{
@@ -473,6 +477,27 @@ input:focus, textarea:focus {
 .disclaimer h4 {
 	color: #049EE8;
 	}
+	
+.recaptchatable * {
+margin: 0;
+padding: 0;
+border: 0;
+/* color: black; */
+position: static;
+top: auto;
+left: auto;
+right: auto;
+bottom: auto;
+background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc))!important;
+background-image: linear-gradient(#fff, #ccc)!important;
+}
+
+
+.recaptcha_input_area {
+position: relative!important;
+background: none!important;
+margin-top: 6%!important;
+}
 	
 }
 @media only screen and (max-width: 40em) {

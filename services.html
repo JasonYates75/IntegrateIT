@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+  	 <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
+    
    
 </head> 
 <body>
@@ -40,7 +54,7 @@
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -193,7 +207,7 @@
                 <ul>
                     <li>Servers hosting</li>
                     <li>Email hosting</li>
-                    <li>eb Conferencing</li>
+                    <li>Web Conferencing</li>
                     <li>Mobile Solutions</li>
                 </ul>
         
@@ -260,6 +274,28 @@
 </div>   
 <!--End Inverse Gallery-->
  
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
+
 <!-- Footer --> 
 <footer id="footer"> 
 	<div id="footer-insert"> 
@@ -275,7 +311,7 @@
                             <ul class="inline-list right" id="footer-menu-list">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html" class="selected" >Services</a></li>
+                                <li><a href="services.html"  class="selected">Services</a></li>
                                 <li><a href="solutions.html">Solutions</a></li>
                                 <li><a href="support.html">Support</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>
@@ -294,17 +330,12 @@
    
    
     
-    
- 
-   
-    
-     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
-		  orbit : {
-			  		slide_number: false,
+		  orbit : {slide_number: false,
 		   			navigation_arrows: false,
 					timer_speed: 2000
 					},
@@ -316,7 +347,8 @@
   </script>
   
   
+  
+  
     
   </body>
 </html>
-

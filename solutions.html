@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
+    
    
 </head> 
 <body>
@@ -36,12 +50,12 @@
       <ul class="small-block-grid-4" id="social_small_grid_3">
               <li><a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48"></i></a></li>
               <li><a href="#"><i class="fi-social-twitter size-36" ></i></a></li>
-              <li><a href="tel:1300766933"><i class="fi-mobile size-36" ></i></a></li>
+              <li><a href="tel:1300796933"><i class="fi-mobile size-36" ></i></a></li>
       </ul>
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -184,23 +198,26 @@
 <!--End Main Content-->
 
 <!--Vendor Slider-->
-<div class="row" id="box-slider">
-    <div class="small-12 large-12 columns">
-        <div class="bxslider">
-          <div class="slide"><img src="img/office365.jpg"></div>
-          <div class="slide"><img src="img/microsoft.jpg"></div>
-          <div class="slide"><img src="img/citrix.jpg"></div>
-          <div class="slide"><img src="img/cyberoam.jpg"></div>
-          <div class="slide"><img src="img/hp.jpg"></div>
-          <div class="slide"><img src="img/trend.jpg"></div>
-        </div>
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
     </div>
 </div>
 
 <!--End Vendor Slider-->
-
-
-
 
 <!-- Footer --> 
 <footer id="footer"> 
@@ -238,6 +255,7 @@
     
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
 		  orbit : {slide_number: false,
@@ -251,21 +269,9 @@
 		  });
   </script>
   
-  <script>
-      $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        slideWidth: 200,
-        minSlides: 5,
-        maxSlides: 10,
-        slideMargin: 15,
-		 auto: true,
-		 pager: false,
-      });
-    });
-      </script>
+  
   
   
     
   </body>
 </html>
-

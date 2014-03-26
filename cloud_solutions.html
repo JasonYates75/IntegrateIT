@@ -4,17 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloud Solutions</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/mystyles.css" />
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: false,
+		 pager: false,
+      });
+    });
+      </script>
 </head> 
 <body>
   
 <!--Header-->
 <header id="header">
+<!--Logo, Social links, phone and support-->
 <div class="row">
   <!--Logo Image and text-->
     <div class="small-10 small-centered large-3 large-uncentered columns" id="logo-image">
@@ -26,7 +43,7 @@
     </div> 
     <!--End Logo Image and Text-->
     
-   <!--Social links, Phone and Support-->
+    <!--Social links, Phone and Support-->
  	<div class="large-3 columns" id="social_large_columns">
       <ul class="small-block-grid-4" id="social_small_grid_3">
               <li><a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48"></i></a></li>
@@ -42,12 +59,12 @@
       
       
       <div class="small-12 large-12 columns">
-		<a href="http://aus.myconnectwise.net/integrateit" class="button round right">Service Desk Client Login</a><br>
+		<a href="http://aus.myconnectwise.net/integrateit" class="button  right">Service Desk Client Login</a><br>
       </div>
         
     </div>
 </div>
-<!--End Social links and phone-->
+<!--End Logo, Social links, phone and support-->
  
  
     
@@ -68,10 +85,10 @@
                 <section class="top-bar-section">
                 <!-- Left Nav Section -->
                     <ul class="left">
-                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li class="has-dropdown">
-                            <a href="services.html" >Services</a>
+                            <a href="services.html">Services</a>
                                 <ul class="dropdown">
                                 <li><a href="professional_it.html">Professional IT Services</a></li>
                                 <li><a href="managed_services.html">Managed Services </a></li>
@@ -106,7 +123,8 @@
 
 <!-- First Band (Slider) -->
 
-<div id="main-content"> 
+<div id="main-content-index"> 
+ 
 <!--First Tier-->
     <div class="row">
         <div class="small-12 large-12 columns">
@@ -115,10 +133,10 @@
          </div>
      </div>
 <!--End First Tier-->
-            
-            
 
-                
+
+
+
 <!--SecondTier Gallery Inverse-->               
     <div id="gallery-inverse">
         <div class="row">
@@ -152,6 +170,8 @@
     </div>
 <!--End Second Tier-->  
 
+    
+
 <!--Third Tier-->  
  <div class="row">
  <div class="small-12 medium-12 large-12 columns">
@@ -161,19 +181,15 @@
  </div>         
 <!--End Third Tier-->
 
-<!--Fourth Tier-->
+
+ <!--Fourth Tier-->
 <div class="row">
  <div class="small-12 medium-12 large-12 columns">
  <h4>Private Cloud:</h4>
  <p>The Public Cloud doesn’t always suit all business types as there are always different considerations and concerns with outsourcing and uploading your data online.  IntegrateIT Australia also provide Private Cloud solutions provide the same benefits however they are implemented using onsite based hardware. This allows for applications to be published and users able to access the data and LoB (Line of Business) applications when ever and where ever they want. This can be used on laptops, PC’s, smart phones, iPads and tablets. </p>
  </div>
  </div> 
-<!--End Fourth Tier-->
-
-
-
-
-
+<!--End Fourth Tier--> 
 
 <!-- Call to Action Panel -->
     <div class="row" id="call-to-action">
@@ -193,9 +209,35 @@
         </div>
     
 <!-- End Call to Action Panel -->
-</div>
+        
+    </div>
 
 <!--End Main Content-->
+
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
+
+
+
 
 <!-- Footer --> 
 <footer id="footer"> 
@@ -213,8 +255,8 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="solutions.html"  class="selected">Solutions</a></li>
-                                <li><a href="support.html">Support</a></li>
+                                <li><a href="solutions.html">Solutions</a></li>
+                                <li><a href="support.html"  class="selected">Support</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>
                                 <li><a href="vendors.html">Vendors</a></li>
                                 <li><a href="terms_conditions.html">Terms of Use & Conditions</a></li>
@@ -227,11 +269,13 @@
     </div>
 </footer>
  <!-- End Footer -->
+ 
+   
    
     
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
 		  orbit : {slide_number: false,
@@ -244,6 +288,8 @@
 					}
 		  });
   </script>
+  
+  
   
   
     

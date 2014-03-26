@@ -7,8 +7,25 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
+    
     
 </head> 
 <body>
@@ -36,7 +53,7 @@
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -198,6 +215,28 @@ With managed services from <span class="integrate-blue">Integrate</span>IT <span
 
 <!--End Main Content-->
 
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
+
 <!-- Footer --> 
 <footer id="footer"> 
 	<div id="footer-insert"> 
@@ -228,11 +267,13 @@ With managed services from <span class="integrate-blue">Integrate</span>IT <span
     </div>
 </footer>
  <!-- End Footer -->
+ 
+   
    
     
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
     <script>
       $(document).foundation({
 		  orbit : {slide_number: false,
@@ -247,6 +288,9 @@ With managed services from <span class="integrate-blue">Integrate</span>IT <span
   </script>
   
   
+  
+  
     
   </body>
 </html>
+

@@ -3,16 +3,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IntegrateIT Australia</title>
+    <title>Support</title>
     
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
     
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        slideWidth: 150,
+        minSlides: 8,
+        maxSlides: 8,
+        slideMargin: 10,
+		 auto: true,
+		 pager: false,
+      });
+    });
+      </script>
+    
    
 </head> 
 <body>
@@ -36,12 +50,12 @@
       <ul class="small-block-grid-4" id="social_small_grid_3">
               <li><a href="http://www.jasonyates75.com.au"><i class="fi-social-facebook size-48"></i></a></li>
               <li><a href="#"><i class="fi-social-twitter size-36" ></i></a></li>
-              <li><a href="tel:1300766933"><i class="fi-mobile size-36" ></i></a></li>
+              <li><a href="tel:1300796933"><i class="fi-mobile size-36" ></i></a></li>
       </ul>
       
       
       <div class="small-12 large-12 columns" id="mobile">
-      	<a href="tel:1300766933"><p>Phone 1300 79 69 33</p></a>
+      	<a href="tel:1300796933"><p>Phone 1300 79 69 33</p></a>
       </div>
       
       
@@ -118,24 +132,39 @@
 </div>
 
 <div class="row">
-<div class="small-12 medium-12 large-12 columns">
-<h4>Online Remote Support</h4>
- 
-<p>Our Remote Support facilities allows us to resolve technical issues and errors by connecting us to your device.</p>
- 
-<p style="font-style:italic">On instruction from IntegrateIT Australia support personnel, please click on one of links below and select ‘Run’.</p>
-
-    <div class="row">
-        <div class="small-12 medium-12 large-12 columns panel">
-            <ul style="list-style:none">
-                <li><a href="support_downloads/IntegrateITQuickSupport.exe"><p><img src="img/microsoft.png" width="8%">  Windows TeamViewer Support</p></a></li><br>
-                <li><p><img src="img/apple.jpg" width="8%">  MAC TeamViewer Support</p></li><br>
-                <li><a href="support_downloads/IntegrateIT_Support.exe"><p><img src="img/vnc.jpg" width="8%">  Windows VNC Support</p></a></li>
-            </ul>
-        </div>
-    </div>
+    <div class="small-12 medium-12 large-12 columns">
+    	<h4>Online Remote Support</h4>
+     
+    		<p>Our Remote Support facilities allows us to resolve technical issues and errors by connecting us to your device.</p>
+     
+    		<p style="font-style:italic">On instruction from IntegrateIT Australia support personnel, please click on one of links below and select ‘Run’.</p>
+    
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns panel">
+                    <ul style="list-style:none">
+                    
+                        <li><a href="support_downloads/IntegrateITQuickSupport.exe"><p><img src="img/microsoft.png" width="8%">  Windows TeamViewer Support</p></a></li><br>
+                        
+                        
+                        <li><a href="support_downloads/TeamViewerQS.dmg"><p><img src="img/apple.jpg" width="8%">  MAC TeamViewer Support</p></a></li><br>
+                        
+                        
+                         <li><a href="support_downloads/IntegrateIT_Support.exe"><p><img src="img/vnc.jpg" width="8%">  Windows VNC Support</p></a></li>
+                         
+                         
+                        <li><a href="https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market"><p><img src="img/googleplay.png" width="15%">  App for Android Mobile Teamviewer Support</p></a></li>
+                        
+                         <li><a href="https://itunes.apple.com/us/app/teamviewer-quicksupport/id661649585"><p><img src="img/appstore.png" width="15%">  iTunes App for iOS(iPad & iPhone etc) TeamViewer Support</p></a></li>
+                        
+                        
+                       
+                        
+                       
+                        
+                    </ul>
+                </div>
+            </div>
    </div>
-   
 </div>
  
  <div class="row">
@@ -162,6 +191,28 @@
 
 
 
+<!--Vendor Slider-->
+<div class="row" >
+    <div class="small-12 large-12 columns" id="box-slider">
+        <ul class="bxslider">
+          <li><img src="img/vendors/microsoft_v.jpg"></li>
+          <li><img src="img/vendors/exchange.jpg"></li>
+          <li><img src="img/vendors/tsuite.jpg"></li>
+          <li><img src="img/vendors/office.jpg"></li>
+          <li><img src="img/vendors/symantec.jpg"></li>
+          <li><img src="img/vendors/ingram.jpg"></li>
+          <li><img src="img/vendors/internode.jpg"></li>
+          <li><img src="img/vendors/cisco.jpg"></li>
+          <li><img src="img/vendors/flexigroup.jpg"></li> 
+          <li><img src="img/vendors/hp.jpg"></li> 
+          <li><img src="img/vendors/netbox.jpg"></li>
+          <li><img src="img/vendors/cyberoam.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--End Vendor Slider-->
+
 <!-- Footer --> 
 <footer id="footer"> 
 	<div id="footer-insert"> 
@@ -179,7 +230,7 @@
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="solutions.html">Solutions</a></li>
-                                <li><a href="support.html">Support</a></li>
+                                <li><a href="support.html"  class="selected">Support</a></li>
                                 <li><a href="contact.php">Contact Us</a></li>
                                 <li><a href="vendors.html">Vendors</a></li>
                                 <li><a href="terms_conditions.html">Terms of Use & Conditions</a></li>
@@ -212,8 +263,7 @@
 		  });
   </script>
   
-
-
+  
   
   
     
